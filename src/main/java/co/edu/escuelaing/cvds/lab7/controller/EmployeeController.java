@@ -56,7 +56,7 @@ public class EmployeeController {
 
     @DeleteMapping("/api/employees/{employeeId}")
     @ResponseBody
-    public List<Employee> deleteEmployee(@PathVariable Long employeeId) {
+    public List<Employee> deleteProduct(@PathVariable Long employeeId) {
         employeeService.deleteEmployee(employeeId);
         return employeeService.getAll();
     }
